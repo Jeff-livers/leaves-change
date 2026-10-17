@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#111111" />
+  <title>Salida Slackline Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="frame" id="frame">
+    <video class="bg" id="video" src="media/video.mp4" muted autoplay loop playsinline webkit-playsinline preload="auto" aria-hidden="true"></video>
+    <audio id="song" src="media/song.mp3" loop preload="none"></audio>
+    <div class="overlay">
+      <div class="card">
+        <!-- EDIT: headline -->
+        <h1 class="headline">The leaves are changing</h1>
+        <!-- EDIT: message -->
+        <p class="message">and so are we</p>
+      </div>
+    </div>
+    <div class="flash" id="flash" aria-hidden="true"></div>
+    <button class="corner" id="corner" type="button" aria-label="Unmute" aria-pressed="true"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M3 9v6h4l5 5V4L7 9H3z"/><path d="M16 9l5 6M21 9l-5 6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg></span></button>
+    <p class="visually-hidden" id="status" aria-live="polite"></p>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>

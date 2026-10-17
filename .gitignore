@@ -1,0 +1,8 @@
+# Only the web-ready media is committed; originals stay local.
+media/*
+!media/video.mp4
+!media/song.mp3
+/*.mp3
+*.mov
+*.MOV
+.DS_Store
